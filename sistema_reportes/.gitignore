@@ -1,0 +1,37 @@
+# Environments
+.env
+.venv
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
+db.sqlite3
+debug.log
+
+# Migrations (excepto __init__.py)
+sistema_reportes/reportes/migrations/*
+!sistema_reportes/reportes/migrations/__init__.py
+
+# Static files collected
+sistema_reportes/staticfiles/
+
+# Celery
+celerybeat-schedule
+
+# Coverage
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
