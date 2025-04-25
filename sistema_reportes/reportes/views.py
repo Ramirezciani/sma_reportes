@@ -70,7 +70,7 @@ class OrganismoSectorialViewSet(viewsets.ModelViewSet):
 
 class PPDAViewSet(viewsets.ModelViewSet):
     serializer_class = PPDASerializer
-    permission_classes = [IsAuthenticated, IsAdminPermission]
+    permission_classes = [IsAuthenticated, IsAdminPermission,]
     
     def get_queryset(self):
         queryset = PPDA.objects.select_related('organismo').order_by('-fecha_creacion')
